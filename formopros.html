@@ -34,11 +34,11 @@
         <label for="car">Car:</label>
         <p><input type="text" name="car" id="car"></p>
         <p>Вкажіть вид подорожі</p>
-        <p><label><input type="checkbox" name="busines trip">Business trip</label>
-        <label><input type="checkbox" name="holidays">Holidays</label></p>
+        <p><label><input type="checkbox" name="way" value="Business-trip">Business trip</label>
+        <label><input type="checkbox" name="way" value="Holidays">Holidays</label></p>
         <p>Вкажіть свою стать</p>
-        <p><label><input type="radio" name="man">Man</label>
-        <label><input type="radio" name="woman">Woman</label></p>
+        <p><label><input type="radio" name="gender" value="man">Man</label>
+        <label><input type="radio" name="gender" value="woman">Woman</label></p>
       </fieldset>
       <fieldset>
         <label for="email">E-mail:</label>
@@ -49,6 +49,7 @@
         <textarea id="comment" required></textarea> 
       </fieldset>
         <input type="submit" value="Send">
+        <input type="reset" value="Reset">
     </form>
   </div>
 </body>
