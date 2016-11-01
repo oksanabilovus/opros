@@ -3,21 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="shortcut icon" href="fav1.png" type="image/png">
 </head>
 <body>
   <a href="index.html">Go to index</a>
-  
-  <form method="POST" action="https://formspree.io/o.top@ukr.net">
-    <label for="name">Name:</label>
-    <input type="text" name="name" id="name" placeholder="zrazok"> 
-    <br>
-    <label for="email">Email:</label>
-    <input type="emeil" name="email" id="email" required> 
-    <br>
-    <label for="comment">Comment:</label>
-    <textarea id="comment"></textarea> 
-    <br>
-    <input type="submit" name="submit" value="Send">
-  </form>
+  <h4>Соціологічне опитування щодо автотуризму з України в країни Європи.</h4>
+  <div id="Contact-form">
+    <form method="POST" action="https://formspree.io/o.top@ukr.net">
+      <fieldset>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="ПІБ" required/>
+      </fieldset>
+      <fieldset>
+        <label for="passport">Passport:</label>
+        <p><input type="text" name="passport" id="passport" placeholder="AA123456" pattern="[A-Z]{2}[0-9]{6}"/></p>
+        <label>Country:</label>
+        <p><input list="countries"></p>
+        <datalist id="countries">
+          <option>Austria</option>
+          <option>France</option>
+          <option>Deutschland</option>
+          <option>Italy</option>
+          <option>Czech Republic</option>
+          <option>Poland</option>
+        </datalist>
+        <label for="car">Car:</label>
+        <p><input type="text" name="car" id="car"></p>
+        <p><label><input type="checkbox" name="how">Business trip</label>
+        <label><input type="checkbox" name="how">Holidays</label></p>
+        <p><label><input type="radio" name="gender">Man</label>
+        <label><input type="radio" name="gender">Woman</label></p>
+      </fieldset>
+      <fieldset>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+      </fieldset>
+      <fieldset>
+        <label for="comment">Comment:</label> 
+        <textarea id="comment" required></textarea> 
+      </fieldset>
+        <input type="submit" name="submit" value="Send">
+    </form>
+  </div>
 </body>
 </html>
