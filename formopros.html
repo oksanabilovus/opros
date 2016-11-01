@@ -11,14 +11,17 @@
   <div id="Contact-form">
     <form method="POST" action="https://formspree.io/o.top@ukr.net">
       <fieldset>
+        <p>Введіть своє повне прізвище імя по-батькові.</p>
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" placeholder="ПІБ" required/>
       </fieldset>
       <fieldset>
+        <p>Введіть свої паспортні дані.</p>
         <label for="passport">Passport:</label>
-        <p><input type="text" name="passport" id="passport" placeholder="AA123456" pattern="[A-Z]{2}[0-9]{6}"/></p>
+        <input type="text" name="passport" id="passport" placeholder="AA123456" pattern="[A-Z]{2}[0-9]{6}"><br><br>
+        <p>Виберіть країну, до якої подорожували</p>
         <label>Country:</label>
-        <p><input list="countries"></p>
+        <input list="countries">
         <datalist id="countries">
           <option>Austria</option>
           <option>France</option>
@@ -26,11 +29,14 @@
           <option>Italy</option>
           <option>Czech Republic</option>
           <option>Poland</option>
-        </datalist>
+        </datalist><br><br>
+        <p>Вкажіть марку автомобіля.</p>
         <label for="car">Car:</label>
         <p><input type="text" name="car" id="car"></p>
+        <p>Вкажіть вид подорожі</p>
         <p><label><input type="checkbox" name="how">Business trip</label>
         <label><input type="checkbox" name="how">Holidays</label></p>
+        <p>Вкажіть свою стать</p>
         <p><label><input type="radio" name="gender">Man</label>
         <label><input type="radio" name="gender">Woman</label></p>
       </fieldset>
@@ -42,7 +48,6 @@
         <label for="comment">Comment:</label> 
         <textarea id="comment" required></textarea> 
       </fieldset>
-        <input type="email" name="_replyto">
         <input type="submit" value="Send">
     </form>
   </div>
